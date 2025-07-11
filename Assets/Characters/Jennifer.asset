@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236eb76d594401e47a86edde2c8a10d2, type: 3}
+  m_Name: Jennifer
+  m_EditorClassIdentifier: 
+  defaultPortrait: {fileID: 21300000, guid: f7c19d210460bec44abd71e2e2f805c3, type: 3}
+  characterName: c_jennifer
+  talkingPortraits: []
+  happy: {fileID: 21300000, guid: b280006d22109624bbe86e974178a9d9, type: 3}
+  sad: {fileID: 0}
+  angry: {fileID: 21300000, guid: f49a007908c20d747ae9f53dedadcd03, type: 3}
+  surprised: {fileID: 21300000, guid: 06d54d8ec44d0854993e80cf9b63faf9, type: 3}
+  neutral: {fileID: 21300000, guid: f7c19d210460bec44abd71e2e2f805c3, type: 3}
+  thinking: {fileID: 21300000, guid: c30f69ba5011e6d44a1387ad59d4f260, type: 3}
+  portraitSide: 0
+  talkingSound: {fileID: 8300000, guid: 33e9d824c1520924ebd5e3d7954d0dfa, type: 3}

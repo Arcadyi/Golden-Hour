@@ -1,0 +1,1431 @@
+fileFormatVersion: 2
+guid: f332bdac69f034648a398eca180e504c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7956871686211482066
+    second: What A Flop_0
+  - first:
+      213: -4758284372115257332
+    second: What A Flop_1
+  - first:
+      213: 6782744593478022036
+    second: What A Flop_2
+  - first:
+      213: -707769718821011467
+    second: What A Flop_3
+  - first:
+      213: 6752468853632108750
+    second: What A Flop_4
+  - first:
+      213: -9193443869874060847
+    second: What A Flop_5
+  - first:
+      213: -3619030711095825449
+    second: What A Flop_6
+  - first:
+      213: -6742657201685943503
+    second: What A Flop_7
+  - first:
+      213: -3718532281562759213
+    second: What A Flop_8
+  - first:
+      213: 1874630677396999271
+    second: What A Flop_9
+  - first:
+      213: -8051537687155963170
+    second: What A Flop_10
+  - first:
+      213: 5760780593530537575
+    second: What A Flop_11
+  - first:
+      213: 9183202602203735718
+    second: What A Flop_12
+  - first:
+      213: 4514878175331960335
+    second: What A Flop_13
+  - first:
+      213: 7756588763054917449
+    second: What A Flop_14
+  - first:
+      213: 648443140212408723
+    second: What A Flop_15
+  - first:
+      213: -3145781318246326985
+    second: What A Flop_16
+  - first:
+      213: -61435090951011219
+    second: What A Flop_17
+  - first:
+      213: -1320573335302157708
+    second: What A Flop_18
+  - first:
+      213: -8848086757335046692
+    second: What A Flop_19
+  - first:
+      213: -5822253243951183557
+    second: What A Flop_20
+  - first:
+      213: 3428721358147801876
+    second: What A Flop_21
+  - first:
+      213: -5258865436959806210
+    second: What A Flop_22
+  - first:
+      213: 692259857566110743
+    second: What A Flop_23
+  - first:
+      213: 2972666576188802139
+    second: What A Flop_24
+  - first:
+      213: -6231069013170725159
+    second: What A Flop_25
+  - first:
+      213: 2528334711844915918
+    second: What A Flop_26
+  - first:
+      213: -3492885862093395396
+    second: What A Flop_27
+  - first:
+      213: -872292350332066583
+    second: What A Flop_28
+  - first:
+      213: 3297597472669517648
+    second: What A Flop_29
+  - first:
+      213: -3483802357482047841
+    second: What A Flop_30
+  - first:
+      213: -1308798134715560597
+    second: What A Flop_31
+  - first:
+      213: -8187676566343272999
+    second: What A Flop_32
+  - first:
+      213: -8867937024035639293
+    second: What A Flop_33
+  - first:
+      213: -5805840654892207351
+    second: What A Flop_34
+  - first:
+      213: -7360094980085010942
+    second: What A Flop_35
+  - first:
+      213: -6480496969483293287
+    second: What A Flop_36
+  - first:
+      213: 7019988377273691941
+    second: What A Flop_37
+  - first:
+      213: -2402291016400269577
+    second: What A Flop_38
+  - first:
+      213: -4387488866331537269
+    second: What A Flop_39
+  - first:
+      213: 5704096305509286187
+    second: What A Flop_40
+  - first:
+      213: -8213117499607484946
+    second: What A Flop_41
+  - first:
+      213: 6421936733050711018
+    second: What A Flop_42
+  - first:
+      213: -4824674319837722670
+    second: What A Flop_43
+  - first:
+      213: 7239456902673943092
+    second: What A Flop_44
+  - first:
+      213: -8654516979740871229
+    second: What A Flop_45
+  - first:
+      213: 4015792149630069056
+    second: What A Flop_46
+  - first:
+      213: 345992580923579886
+    second: What A Flop_47
+  - first:
+      213: 5613725065538331004
+    second: What A Flop_48
+  - first:
+      213: -8529387653831798035
+    second: What A Flop_49
+  - first:
+      213: -7055853813194037576
+    second: What A Flop_50
+  - first:
+      213: -5766632936444770266
+    second: What A Flop_51
+  - first:
+      213: -4096706562374174902
+    second: What A Flop_52
+  - first:
+      213: 669230646983668378
+    second: What A Flop_53
+  - first:
+      213: 630634465744641076
+    second: What A Flop_54
+  - first:
+      213: 333025165668742097
+    second: What A Flop_55
+  - first:
+      213: 3875453075861082647
+    second: What A Flop_56
+  - first:
+      213: -1153999008590177610
+    second: What A Flop_57
+  - first:
+      213: -702639275926965957
+    second: What A Flop_58
+  - first:
+      213: -2360099178895911956
+    second: What A Flop_59
+  - first:
+      213: 2938228035550397449
+    second: What A Flop_60
+  - first:
+      213: 2405247969671455194
+    second: What A Flop_61
+  - first:
+      213: -4816951441066903916
+    second: What A Flop_62
+  - first:
+      213: -399498533128474324
+    second: What A Flop_63
+  - first:
+      213: 7973363115873013325
+    second: What A Flop_64
+  - first:
+      213: -9024633780435406317
+    second: What A Flop_65
+  - first:
+      213: -6767580327300658911
+    second: What A Flop_66
+  - first:
+      213: -6927769204637705122
+    second: What A Flop_67
+  - first:
+      213: 675173696275702091
+    second: What A Flop_68
+  - first:
+      213: 33707060717023709
+    second: What A Flop_69
+  - first:
+      213: 8172017141281688457
+    second: What A Flop_70
+  - first:
+      213: -6702698394547817412
+    second: What A Flop_71
+  - first:
+      213: -4876607540848419573
+    second: What A Flop_72
+  - first:
+      213: -7273599851834037624
+    second: What A Flop_73
+  - first:
+      213: -4515554008225234508
+    second: What A Flop_74
+  - first:
+      213: 2374142143142851158
+    second: What A Flop_75
+  - first:
+      213: -3884423132170417048
+    second: What A Flop_76
+  - first:
+      213: -5276790017528697187
+    second: What A Flop_77
+  - first:
+      213: 329721819402878203
+    second: What A Flop_78
+  - first:
+      213: 1470731154655622899
+    second: What A Flop_79
+  - first:
+      213: 9062046752576681231
+    second: What A Flop_80
+  - first:
+      213: -2829914952630791117
+    second: What A Flop_81
+  - first:
+      213: 9092164142111219291
+    second: What A Flop_82
+  - first:
+      213: 5225647799351707070
+    second: What A Flop_83
+  - first:
+      213: -1713879642650500302
+    second: What A Flop_84
+  - first:
+      213: -3151214367441109680
+    second: What A Flop_85
+  - first:
+      213: 877749474466907986
+    second: What A Flop_86
+  - first:
+      213: 7500935481210552026
+    second: What A Flop_87
+  - first:
+      213: 4613191634633174084
+    second: What A Flop_88
+  - first:
+      213: -5517173616104208963
+    second: What A Flop_89
+  - first:
+      213: 798453282052658528
+    second: What A Flop_90
+  - first:
+      213: -8831258823306813382
+    second: What A Flop_91
+  - first:
+      213: -2145079899715167002
+    second: What A Flop_92
+  - first:
+      213: -352382986514082594
+    second: What A Flop_93
+  - first:
+      213: 4298890116835203926
+    second: What A Flop_94
+  - first:
+      213: -5874242130594102504
+    second: What A Flop_95
+  - first:
+      213: 1376529043846561851
+    second: What A Flop_96
+  - first:
+      213: -7919662149075661823
+    second: What A Flop_97
+  - first:
+      213: 7146138856775220945
+    second: What A Flop_98
+  - first:
+      213: 2637147536289335611
+    second: What A Flop_99
+  - first:
+      213: -8839901195289314580
+    second: What A Flop_100
+  - first:
+      213: -6057808610226270415
+    second: What A Flop_101
+  - first:
+      213: 5604215212539974820
+    second: What A Flop_102
+  - first:
+      213: 7394865503824459149
+    second: What A Flop_103
+  - first:
+      213: 7711761833315379985
+    second: What A Flop_104
+  - first:
+      213: 6794636435075076002
+    second: What A Flop_105
+  - first:
+      213: -7044992831509757248
+    second: What A Flop_106
+  - first:
+      213: -1507786417519023729
+    second: What A Flop_107
+  - first:
+      213: 8621057581515563583
+    second: What A Flop_108
+  - first:
+      213: -8188750388184096969
+    second: What A Flop_109
+  - first:
+      213: -7266871110496394248
+    second: What A Flop_110
+  - first:
+      213: 422580112646418793
+    second: What A Flop_111
+  - first:
+      213: -5966574541953675312
+    second: What A Flop_112
+  - first:
+      213: 3003022864033562775
+    second: What A Flop_113
+  - first:
+      213: 615415196687882688
+    second: What A Flop_114
+  - first:
+      213: 1141968684470569946
+    second: What A Flop_115
+  - first:
+      213: 356821990280570090
+    second: What A Flop_116
+  - first:
+      213: -1636902981265459711
+    second: What A Flop_117
+  - first:
+      213: 8140742263446985566
+    second: What A Flop_118
+  - first:
+      213: -5150818554387932379
+    second: What A Flop_119
+  - first:
+      213: 8174149595169582576
+    second: What A Flop_120
+  - first:
+      213: -376050672427989056
+    second: What A Flop_121
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: What A Flop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1bffb24ac7c6e60800000000000000
+      internalID: 7956871686211482066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0807c3f29d27fdb0800000000000000
+      internalID: -4758284372115257332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49375707546212e50800000000000000
+      internalID: 6782744593478022036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_3
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff35eec03f7d26f0800000000000000
+      internalID: -707769718821011467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_4
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec881a175a695bd50800000000000000
+      internalID: 6752468853632108750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_5
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d10aa162835a6080800000000000000
+      internalID: -9193443869874060847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_6
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db67e12ebe96cdc0800000000000000
+      internalID: -3619030711095825449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_7
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ba74bcff44d62a0800000000000000
+      internalID: -6742657201685943503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_8
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dff0af679e156cc0800000000000000
+      internalID: -3718532281562759213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_9
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c4c4b3ba6040a10800000000000000
+      internalID: 1874630677396999271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_10
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda0665e121334090800000000000000
+      internalID: -8051537687155963170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_11
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7660a5a8d6762ff40800000000000000
+      internalID: 5760780593530537575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_12
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6ebccac1a417f70800000000000000
+      internalID: 9183202602203735718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_13
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0643d497c118ae30800000000000000
+      internalID: 4514878175331960335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_14
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947cca24260f4ab60800000000000000
+      internalID: 7756588763054917449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_15
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3914665b99bbff800800000000000000
+      internalID: 648443140212408723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_16
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d1ed0ee80f754d0800000000000000
+      internalID: -3145781318246326985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_17
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d640f1b3c1db52ff0800000000000000
+      internalID: -61435090951011219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_18
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a46795c816cade0800000000000000
+      internalID: -1320573335302157708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_19
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5e43f29f7453580800000000000000
+      internalID: -8848086757335046692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_20
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b398ce1b583333fa0800000000000000
+      internalID: -5822253243951183557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_21
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413d13ab8e3459f20800000000000000
+      internalID: 3428721358147801876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_22
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc6e6c6fb1c407b0800000000000000
+      internalID: -5258865436959806210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_23
+      rect:
+        serializedVersion: 2
+        x: 2921
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7149d763ca66b9900800000000000000
+      internalID: 692259857566110743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_24
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54096d4088014920800000000000000
+      internalID: 2972666576188802139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_25
+      rect:
+        serializedVersion: 2
+        x: 3175
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ded3030fbbc689a0800000000000000
+      internalID: -6231069013170725159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_26
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca4ec45603761320800000000000000
+      internalID: 2528334711844915918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_27
+      rect:
+        serializedVersion: 2
+        x: 3429
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a60f480d6c68fc0800000000000000
+      internalID: -3492885862093395396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_28
+      rect:
+        serializedVersion: 2
+        x: 3556
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4aa2e9abef4e3f0800000000000000
+      internalID: -872292350332066583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_29
+      rect:
+        serializedVersion: 2
+        x: 3683
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05741b21e6b63cd20800000000000000
+      internalID: 3297597472669517648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_30
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f963d9eb63c07afc0800000000000000
+      internalID: -3483802357482047841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_31
+      rect:
+        serializedVersion: 2
+        x: 3937
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dc591e70736dde0800000000000000
+      internalID: -1308798134715560597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_32
+      rect:
+        serializedVersion: 2
+        x: 4064
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5b1570b878f5e80800000000000000
+      internalID: -8187676566343272999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_33
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30032dfc242cee480800000000000000
+      internalID: -8867937024035639293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_34
+      rect:
+        serializedVersion: 2
+        x: 4318
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903f0ae5fa28d6fa0800000000000000
+      internalID: -5805840654892207351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_35
+      rect:
+        serializedVersion: 2
+        x: 4445
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ea5ee6c90bbd990800000000000000
+      internalID: -7360094980085010942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_36
+      rect:
+        serializedVersion: 2
+        x: 4572
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99de3f56756a016a0800000000000000
+      internalID: -6480496969483293287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_37
+      rect:
+        serializedVersion: 2
+        x: 4699
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fe4c25c320c6160800000000000000
+      internalID: 7019988377273691941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_38
+      rect:
+        serializedVersion: 2
+        x: 4826
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe89586c0959aed0800000000000000
+      internalID: -2402291016400269577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What A Flop_39
+      rect:
+        serializedVersion: 2
+        x: 4953
+        y: 0
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80d35a3f128c13c0800000000000000
+      internalID: -4387488866331537269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 54b32fe444aa72b40b3f955b040cd32f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":127.0,"y":59.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      What A Flop_0: 7956871686211482066
+      What A Flop_1: -4758284372115257332
+      What A Flop_10: -8051537687155963170
+      What A Flop_11: 5760780593530537575
+      What A Flop_12: 9183202602203735718
+      What A Flop_13: 4514878175331960335
+      What A Flop_14: 7756588763054917449
+      What A Flop_15: 648443140212408723
+      What A Flop_16: -3145781318246326985
+      What A Flop_17: -61435090951011219
+      What A Flop_18: -1320573335302157708
+      What A Flop_19: -8848086757335046692
+      What A Flop_2: 6782744593478022036
+      What A Flop_20: -5822253243951183557
+      What A Flop_21: 3428721358147801876
+      What A Flop_22: -5258865436959806210
+      What A Flop_23: 692259857566110743
+      What A Flop_24: 2972666576188802139
+      What A Flop_25: -6231069013170725159
+      What A Flop_26: 2528334711844915918
+      What A Flop_27: -3492885862093395396
+      What A Flop_28: -872292350332066583
+      What A Flop_29: 3297597472669517648
+      What A Flop_3: -707769718821011467
+      What A Flop_30: -3483802357482047841
+      What A Flop_31: -1308798134715560597
+      What A Flop_32: -8187676566343272999
+      What A Flop_33: -8867937024035639293
+      What A Flop_34: -5805840654892207351
+      What A Flop_35: -7360094980085010942
+      What A Flop_36: -6480496969483293287
+      What A Flop_37: 7019988377273691941
+      What A Flop_38: -2402291016400269577
+      What A Flop_39: -4387488866331537269
+      What A Flop_4: 6752468853632108750
+      What A Flop_5: -9193443869874060847
+      What A Flop_6: -3619030711095825449
+      What A Flop_7: -6742657201685943503
+      What A Flop_8: -3718532281562759213
+      What A Flop_9: 1874630677396999271
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

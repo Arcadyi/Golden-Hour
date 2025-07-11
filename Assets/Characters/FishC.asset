@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236eb76d594401e47a86edde2c8a10d2, type: 3}
+  m_Name: FishC
+  m_EditorClassIdentifier: 
+  defaultPortrait: {fileID: 21300000, guid: 62d417f1e4150624daafa2fa4f987926, type: 3}
+  characterName: 
+  talkingPortraits: []
+  happy: {fileID: 21300000, guid: f33eab67d1e6e9d48ab38bd6ef9e8f36, type: 3}
+  sad: {fileID: 21300000, guid: d0ea13d054cfe2445b2a27916da65c71, type: 3}
+  angry: {fileID: 21300000, guid: 5cc53e249315d4a48952af19855d7b19, type: 3}
+  surprised: {fileID: 21300000, guid: c079eba347d661a4da517310ba3b3962, type: 3}
+  neutral: {fileID: 21300000, guid: 62d417f1e4150624daafa2fa4f987926, type: 3}
+  thinking: {fileID: 0}
+  portraitSide: 0
+  talkingSound: {fileID: 8300000, guid: 027f4b55d7eb37d448f857f861bd0544, type: 3}

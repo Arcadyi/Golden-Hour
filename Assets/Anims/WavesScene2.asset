@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4d0579ad2753c459b339d128bc6cde, type: 3}
+  m_Name: WavesScene2
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 1127323180509097970, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: 2126593819, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: -700076200, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: 204729062, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: -510330013, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: -1845645324, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: 1153129991, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: 1115384770, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  - {fileID: -30228732, guid: 3496f424ca2642c4ab287c8d91f781d7, type: 3}
+  animationSpeed: 0.2

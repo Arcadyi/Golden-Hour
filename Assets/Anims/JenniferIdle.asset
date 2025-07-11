@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4d0579ad2753c459b339d128bc6cde, type: 3}
+  m_Name: JenniferIdle
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -9088579178421672390, guid: ffc96a55b5cbfcd4997e12dc2feba4a3, type: 3}
+  - {fileID: 8370596883513055208, guid: ffc96a55b5cbfcd4997e12dc2feba4a3, type: 3}
+  - {fileID: 2513805755013550357, guid: ffc96a55b5cbfcd4997e12dc2feba4a3, type: 3}
+  - {fileID: -1048283312, guid: ffc96a55b5cbfcd4997e12dc2feba4a3, type: 3}
+  animationSpeed: 0.4
