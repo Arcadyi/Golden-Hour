@@ -16,21 +16,21 @@ public class DialogueManager : MonoBehaviour
     
     [Header("Typewriter")]
     public float typingSpeed = 0.05f;
-    private Coroutine typingCoroutine;
-    private string dialogue;
+    private Coroutine _typingCoroutine;
+    private string _dialogue;
 
     [Header("Characters")]
     public List<Character> characters;
     public SpriteRenderer characterImageL;
     public SpriteRenderer characterImageR;
-    private Character currentCharacter = null;
+    private Character _currentCharacter;
 
     [Header("Audio")]
-    private AudioSource audioSource;
+    private AudioSource _audioSource;
 
     [Header("Ink")]
     public TextAsset gameStory;
-    private Story story;
+    private Story _story;
     public TextAsset papersPleaseAcceptedDialogue;
     public TextAsset papersPleaseDeniedDialogue;
 
@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     public bool looping;
 
     public string debugEntryString;
+    
     [ContextMenu("Skip to Dialogue")]
     void DoSomething()
     {
@@ -57,7 +58,7 @@ public class DialogueManager : MonoBehaviour
         }
         else Destroy(gameObject);
 
-        audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -70,13 +71,13 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void OnDialogueClick()
     {
-        if (typingCoroutine != null)
+        if (_typingCoroutine != null)
         {
             // Still typing: finish instantly
-            StopCoroutine(typingCoroutine);
-            dialogueText.text = dialogue;
-            audioSource.Stop();
-            typingCoroutine = null;
+            StopCoroutine(_typingCoroutine);
+            dialogueText.text = _dialogue;
+            _audioSource.Stop();
+            _typingCoroutine = null;
         }
         else
         {
@@ -87,32 +88,32 @@ public class DialogueManager : MonoBehaviour
 
     public void GoToPath(string pathName)
     {
-        if (story == null)
+        if (_story == null)
         {
             Debug.LogError("Story is not set. Cannot go to branch.");
             return;
         }
-        story.ChoosePathString(pathName);
+        _story.ChoosePathString(pathName);
     }
 
     // Public API to start a story
     public void SetStory(TextAsset inkAsset)
     {
-        story = new Story(inkAsset.text);
-        story.BindExternalFunction("call_event", (string e) => CallEvent(e));
-        currentCharacter = null;  // reset
+        _story = new Story(inkAsset.text);
+        _story.BindExternalFunction("call_event", (string e) => CallEvent(e));
+        _currentCharacter = null;  // reset
         ContinueStory();
     }
 
     public bool IsDialogueInLoop()
     {
-        return (bool)story.variablesState["looping"];
+        return (bool)_story.variablesState["looping"];
     }
 
     public void CallEvent(string eventName)
     {
         if (eventName.Equals("second_scene", StringComparison.OrdinalIgnoreCase))
-            gameManager.SwitchScene(0.3f,2);
+            gameManager.SwitchScene(2.0f,2);
         else if (eventName.Equals("show_mute_button", StringComparison.OrdinalIgnoreCase))
             gameManager.ShowMuteButton(true);
         else if (eventName.Equals("hide_dialoguebox", StringComparison.OrdinalIgnoreCase))
@@ -131,7 +132,7 @@ public class DialogueManager : MonoBehaviour
     {
         ClearButtons();
 
-        if (story.canContinue)
+        if (_story.canContinue)
         {
             // Restore dialogue UI, hide choices
             dialogueBoxContainer.SetActive(true);
@@ -140,8 +141,8 @@ public class DialogueManager : MonoBehaviour
             characterImageR.gameObject.SetActive(true);
 
             // Get next line + tags
-            string text = story.Continue();
-            var tags = story.currentTags;
+            string text = _story.Continue();
+            var tags = _story.currentTags;
 
             // Display text
             SetDialogue(text);
@@ -149,7 +150,7 @@ public class DialogueManager : MonoBehaviour
             // Process tags
             HandleTags(tags);
         }
-        else if (story.currentChoices.Count > 0)
+        else if (_story.currentChoices.Count > 0)
         {
             ShowChoices();
         }
@@ -167,24 +168,24 @@ public class DialogueManager : MonoBehaviour
             var c = characters.Find(ch => ch.characterName.Equals(a, StringComparison.OrdinalIgnoreCase));
             if (c != null)
             {
-                currentCharacter = c;
+                _currentCharacter = c;
                 break;
             }
         }
 
         // Emotion tag
         string emotion = null;
-        foreach (var tag in tags)
+        foreach (var currentTag in tags)
         {
-            if (tag.StartsWith("emotion_", StringComparison.OrdinalIgnoreCase))
+            if (currentTag.StartsWith("emotion_", StringComparison.OrdinalIgnoreCase))
             {
-                emotion = tag.Substring("emotion_".Length);
+                emotion = currentTag.Substring("emotion_".Length);
                 break;
             }
         }
 
-        if (currentCharacter)
-            UpdatePortrait(currentCharacter, emotion);
+        if (_currentCharacter)
+            UpdatePortrait(_currentCharacter, emotion);
     }
 
     void UpdatePortrait(Character character, string emotion)
@@ -198,6 +199,7 @@ public class DialogueManager : MonoBehaviour
                 case "sad":       face = character.sad;       break;
                 case "angry":     face = character.angry;     break;
                 case "surprised": face = character.surprised; break;
+                case "shocked": face = character.shocked; break;
                 case "thinking":  face = character.thinking;  break;
                 case "neutral":   face = character.defaultPortrait; break;
                 default:
@@ -206,8 +208,8 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        audioSource.clip = character.talkingSound;
-        audioSource.Play();
+        _audioSource.clip = character.talkingSound;
+        _audioSource.Play();
 
         bool isLeft = character.portraitSide == Character.PortraitSide.Left;
         var show = isLeft ? characterImageL : characterImageR;
@@ -220,23 +222,23 @@ public class DialogueManager : MonoBehaviour
 
     void SetDialogue(string line)
     {
-        dialogue = line.Trim();
-        if (typingCoroutine != null)
-            StopCoroutine(typingCoroutine);
-        typingCoroutine = StartCoroutine(TypeText());
+        _dialogue = line.Trim();
+        if (_typingCoroutine != null)
+            StopCoroutine(_typingCoroutine);
+        _typingCoroutine = StartCoroutine(TypeText());
     }
 
     IEnumerator TypeText()
     {
         dialogueText.text = "";
         dialogueBox.SetActive(true);
-        foreach (var ch in dialogue)
+        foreach (var ch in _dialogue)
         {
             dialogueText.text += ch;
             yield return new WaitForSeconds(typingSpeed);
         }
-        audioSource.Stop();
-        typingCoroutine = null;  // mark as finished
+        _audioSource.Stop();
+        _typingCoroutine = null;  // mark as finished
     }
 
     void ShowChoices()
@@ -244,15 +246,15 @@ public class DialogueManager : MonoBehaviour
         dialogueBoxContainer.SetActive(false);
         buttonContainer.SetActive(true);
 
-        for (int i = 0; i < story.currentChoices.Count; i++)
+        for (int i = 0; i < _story.currentChoices.Count; i++)
         {
-            var choice = story.currentChoices[i];
+            var choice = _story.currentChoices[i];
             var btn = Instantiate(buttonPrefab, buttonContainer.transform);
             btn.SetButtonText(choice.text);
             int idx = i;
             btn.onClickEvent.AddListener(() =>
             {
-                story.ChooseChoiceIndex(idx);
+                _story.ChooseChoiceIndex(idx);
                 ContinueStory();
             });
         }
@@ -266,7 +268,7 @@ public class DialogueManager : MonoBehaviour
         buttonContainer.SetActive(false);
         characterImageL.gameObject.SetActive(false);
         characterImageR.gameObject.SetActive(false);
-        audioSource.Stop();
+        _audioSource.Stop();
     }
 
     public void SetAcceptedArst() => SetStory(papersPleaseAcceptedDialogue);
@@ -279,6 +281,15 @@ public class DialogueManager : MonoBehaviour
         buttonContainer.SetActive(false);
         characterImageL.enabled = true;
         characterImageR.enabled = true;
+    }
+
+    public void DisableDialogue()
+    {
+        dialogueBox.SetActive(false);
+        dialogueBoxContainer.SetActive(false);
+        buttonContainer.SetActive(false);
+        characterImageL.enabled = false;
+        characterImageR.enabled = false;
     }
 
     public void ClearButtons()

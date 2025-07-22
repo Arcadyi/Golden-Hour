@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events; // Importing TextMeshPro namespace for text rendering
@@ -14,16 +13,8 @@ public class MainMenuManager : MonoBehaviour
     public GameManager gameManager; // Reference to the GameManager for managing game state
     public DialogueManager dialogueManager; // Reference to the DialogueManager for managing dialogues
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void StartIntro()
     {
@@ -31,7 +22,7 @@ public class MainMenuManager : MonoBehaviour
         StartCoroutine(StartIntroSequence());
     }
 
-    private System.Collections.IEnumerator StartIntroSequence()
+    private IEnumerator StartIntroSequence()
     {
         // Wait for the TypeText coroutine to complete
         yield return StartCoroutine(TypeText("<color=#ebac4d>CD</color><color=#ece6df>\\\\\\</color>"));
@@ -55,11 +46,11 @@ public class MainMenuManager : MonoBehaviour
     }
 
     // coroutine to type out the text letter by letter
-    public System.Collections.IEnumerator TypeText(string text)
+    public IEnumerator TypeText(string text)
     {
         introText.text = ""; // Clear the text field
         bool isTag = false; // Track if we're inside a rich text tag
-        foreach (char letter in text.ToCharArray())
+        foreach (char letter in text)
         {
             if (letter == '<') isTag = true; // Start of a rich text tag
             if (letter == '>') isTag = false; // End of a rich text tag
@@ -73,11 +64,11 @@ public class MainMenuManager : MonoBehaviour
     }
 
     // coroutine to add text letter by letter
-    public System.Collections.IEnumerator AddText(string text, float speed)
+    public IEnumerator AddText(string text, float speed)
     {
         introText.text += "\n"; // Add a new line to the text field
         bool isTag = false; // Track if we're inside a rich text tag
-        foreach (char letter in text.ToCharArray())
+        foreach (char letter in text)
         {
             if (letter == '<') isTag = true; // Start of a rich text tag
             if (letter == '>') isTag = false; // End of a rich text tag
@@ -123,7 +114,7 @@ public class MainMenuManager : MonoBehaviour
     }
 
     // exit coroutine
-    public System.Collections.IEnumerator ExitCoroutine()
+    public IEnumerator ExitCoroutine()
     {
         // Logic to handle exit animation or transition goes here
         yield return new WaitForSeconds(0.5f); // Placeholder for exit animation duration

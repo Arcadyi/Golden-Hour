@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class QuestionMark : MonoBehaviour
 {
+    private static readonly int Disappear = Animator.StringToHash("disappear");
 
     public Animator animator;
     public float timeSinceActivated;
@@ -14,21 +15,21 @@ public class QuestionMark : MonoBehaviour
     public UnityEvent onSecondThresholdReached;
     public UnityEvent onThirdThresholdReached;
 
-    bool clickedOnce = false;
+    bool _clickedOnce;
 
     public float firstThresholdSeconds = 5f;
-    private bool isFirstThresholdReached = false;
+    private bool _isFirstThresholdReached;
     public float secondThresholdSeconds = 10f;
-    private bool isSecondThresholdReached = false;
+    private bool _isSecondThresholdReached;
     public float thirdThresholdSeconds = 15f;
-    private bool isThirdThresholdReached = false;
+    private bool _isThirdThresholdReached;
     
     public DialogueManager dialogueManager;
     void OnMouseDown()
     {
         if (animator)
         {
-            animator.SetTrigger("disappear");
+            animator.SetTrigger(Disappear);
         }
         else
         {
@@ -36,9 +37,9 @@ public class QuestionMark : MonoBehaviour
         }
 
         // Start the coroutine to wait for the animation to end
-        if (!clickedOnce)
+        if (!_clickedOnce)
         {
-            clickedOnce = true;
+            _clickedOnce = true;
             onClick.Invoke(); // Invoke the click event only once
         }
         else
@@ -71,9 +72,9 @@ public class QuestionMark : MonoBehaviour
 
         if (timeSinceActivated >= firstThresholdSeconds && timeSinceActivated < secondThresholdSeconds)
         {
-            if (!isFirstThresholdReached)
+            if (!_isFirstThresholdReached)
             {
-                isFirstThresholdReached = true;
+                _isFirstThresholdReached = true;
                 // Trigger the first threshold event
                 onFirstThresholdReached.Invoke();
                 // Reset the timer after the first threshold is reached
@@ -82,9 +83,9 @@ public class QuestionMark : MonoBehaviour
         }
         else if (timeSinceActivated >= secondThresholdSeconds && timeSinceActivated < thirdThresholdSeconds)
         {
-            if (!isSecondThresholdReached)
+            if (!_isSecondThresholdReached)
             {
-                isSecondThresholdReached = true;
+                _isSecondThresholdReached = true;
                 // Trigger the second threshold event
                 onSecondThresholdReached.Invoke();
                 timeSinceActivated = 0f; // Reset the timer after the second threshold is reached
@@ -92,9 +93,9 @@ public class QuestionMark : MonoBehaviour
         }
         else if (timeSinceActivated >= thirdThresholdSeconds)
         {
-            if (!isThirdThresholdReached)
+            if (!_isThirdThresholdReached)
             {
-                isThirdThresholdReached = true;
+                _isThirdThresholdReached = true;
                 // Trigger the third threshold event
                 onThirdThresholdReached.Invoke();
                 timeSinceActivated = 0f; // Reset the timer after the third threshold is reached

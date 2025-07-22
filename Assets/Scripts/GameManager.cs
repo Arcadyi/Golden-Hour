@@ -1,11 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static readonly int GlitchStrength = Shader.PropertyToID("_Glitch_Strength");
     public static GameManager Instance { get; private set; }
     public MainMenuManager mainMenuManager;
+    public DialogueManager dialogueManager;
 
     public GameObject mainMenuObjects;
     public GameObject firstSceneObjects;
@@ -18,10 +19,92 @@ public class GameManager : MonoBehaviour
 
     public GameObject fancyLoadScreen;
     public GameObject fancyLoadScreenBlocker;
+
+    public AudioSource loopingOst;
+    public AudioSource waves;
+
+    public AudioSource glitch;
     
     public Material fsShaderMaterial; // Reference to the shader material
     
     public float transitionSpeed = 0.5f; // Speed of the scene transition in seconds
+    
+    public Effect_Jitter effectJitter;
+    
+        /* -------------  NEW  ------------- */
+    [Header("Global Glitch Flicker")]
+    public bool enableGlitchFlicker = false;   // turn on/off in Inspector or via script
+    public Vector2 flickerIntervalRange = new Vector2(0.1f, 1.5f); // min / max seconds between flips
+    [Tooltip("How long the glitch stays ON each flicker")]
+    public Vector2 glitchDurationRange = new Vector2(0.02f, 0.08f);
+    [Tooltip("How long the glitch stays OFF between flickers")]
+    public Vector2 pauseDurationRange  = new Vector2(0.3f, 1.2f);
+    private Coroutine glitchFlickerRoutine;
+
+    /* -------------  END NEW  ------------- */
+
+    void OnEnable()  { if (enableGlitchFlicker) StartGlitchFlicker(); }
+    void OnDisable() { StopGlitchFlicker(); }
+
+    /* -------------  NEW METHODS ------------- */
+    public void SetGlitchFlicker(bool active)
+    {
+        enableGlitchFlicker = active;
+        if (active) StartGlitchFlicker();
+        else        StopGlitchFlicker();
+    }
+
+    private void StartGlitchFlicker()
+    {
+        if (glitchFlickerRoutine == null)
+            glitchFlickerRoutine = StartCoroutine(GlitchFlickerLoop());
+    }
+
+    private void StopGlitchFlicker()
+    {
+        if (glitchFlickerRoutine != null)
+        {
+            StopCoroutine(glitchFlickerRoutine);
+            glitchFlickerRoutine = null;
+        }
+        // restore clean state
+        if (fsShaderMaterial) fsShaderMaterial.SetFloat(GlitchStrength, 0f);
+        if (effectJitter)     effectJitter.jitterStrength = 0f;
+        if (loopingOst)       loopingOst.volume = 1f;
+    }
+
+    private IEnumerator GlitchFlickerLoop()
+    {
+        while (enableGlitchFlicker)
+        {
+            /* ---- GLITCH ON ---- */
+            float glitchTime = Random.Range(glitchDurationRange.x, glitchDurationRange.y);
+
+            if (fsShaderMaterial)
+                fsShaderMaterial.SetFloat(GlitchStrength, 1f);
+            if (effectJitter)
+                effectJitter.jitterStrength = 1f;
+            if (loopingOst)
+                loopingOst.volume = 0f;
+            if (glitch)
+                glitch.volume = 0.25f;
+
+            yield return new WaitForSecondsRealtime(glitchTime);
+
+            /* ---- GLITCH OFF ---- */
+            float pauseTime = Random.Range(pauseDurationRange.x, pauseDurationRange.y);
+
+            if (fsShaderMaterial)
+                fsShaderMaterial.SetFloat(GlitchStrength, 0f);
+            if (effectJitter)
+                effectJitter.jitterStrength = 0f;
+            if (loopingOst)
+                loopingOst.volume = 1f;
+            if (glitch) glitch.volume = 0f;
+
+            yield return new WaitForSecondsRealtime(pauseTime);
+        }
+    }
 
     // Awake is called when the script instance is being loaded
     void Awake()
@@ -49,12 +132,6 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("MainMenuManager reference is not set in GameManager.");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void SwitchScene(float delay, int sceneIndex, bool useFancy = false)
@@ -119,19 +196,24 @@ public class GameManager : MonoBehaviour
         
         if (fsShaderMaterial)
         {
-            float strengthStart = 0f;
-            float strengthEnd = 1f;
+            //float strengthStart = 0f;
+            //float strengthEnd = 1f;
             
             float progress = 0f;
             while (progress < 1f)
             {
                 progress += Time.deltaTime / transitionSpeed; // Increment progress based on time and speed
-                float strength = Mathf.Lerp(strengthStart, strengthEnd, progress);
+                //float strength = Mathf.Lerp(strengthStart, strengthEnd, progress);
                 
-                fsShaderMaterial.SetFloat("_Glitch_Strength", strength);
+                
+                fsShaderMaterial.SetFloat(GlitchStrength, 1f);
+                effectJitter.jitterStrength = 1;
+                loopingOst.volume = 0;
+                glitch.volume = 1;
                 
                 yield return null; // Wait for the next frame
             }
+            
         }
         else
         {
@@ -145,16 +227,19 @@ public class GameManager : MonoBehaviour
         
         if (fsShaderMaterial)
         {
-            float strengthStart = 1;
-            float strengthEnd = 0f;
+            //float strengthStart = 1;
+            //float strengthEnd = 0f;
             
             float progress = 0f;
             while (progress < 1f)
             {
                 progress += Time.deltaTime / transitionSpeed; // Increment progress based on time and speed
-                float strength = Mathf.Lerp(strengthStart, strengthEnd, progress);
+                //float strength = Mathf.Lerp(strengthStart, strengthEnd, progress);
                 
-                fsShaderMaterial.SetFloat("_Glitch_Strength", strength);
+                fsShaderMaterial.SetFloat(GlitchStrength, 0f);
+                effectJitter.jitterStrength = 0;
+                loopingOst.volume = 1;
+                glitch.volume = 0;
                 
                 yield return null; // Wait for the next frame
             }
@@ -167,15 +252,22 @@ public class GameManager : MonoBehaviour
     
     public IEnumerator SceneTransition(float delay, int scene)
     {
+        dialogueManager.DisableDialogue();
         // Play the transition animation
         yield return StartCoroutine(PlayTransitionAnimation(delay/3f));
         // Wait until the transition animation is done
         yield return new WaitForSeconds(delay/3);
-        // Return the shader to its default state
-        yield return StartCoroutine(ReturnTransitionAnimationDefault(delay/3f));
         mainMenuObjects.SetActive(scene == 0);
         firstSceneObjects.SetActive(scene == 1);
         secondSceneObjects.SetActive(scene == 2);
+        // Return the shader to its default state
+        yield return StartCoroutine(ReturnTransitionAnimationDefault(delay/3f));
+        dialogueManager.EnableDialogue();
+
+        if (scene > 1)
+        {
+            SetGlitchFlicker(true);
+        }
     }
 
     public IEnumerator SceneTransitionFancy(float delay, int scene)

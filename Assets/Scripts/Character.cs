@@ -11,6 +11,7 @@ public class Character : ScriptableObject
     public Sprite sad;
     public Sprite angry;
     public Sprite surprised;
+    public Sprite shocked;
     public Sprite neutral;
     public Sprite thinking;
     public enum PortraitSide

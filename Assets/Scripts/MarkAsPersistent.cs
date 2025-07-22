@@ -7,14 +7,4 @@ public class MarkAsPersistent : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject); // Make this object persistent
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

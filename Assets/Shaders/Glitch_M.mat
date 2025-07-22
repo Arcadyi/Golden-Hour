@@ -38,6 +38,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Band_Count: 0
+    - _Flicker_Speed: 50
     - _Glitch_Strength: 0
     - _Speed: 1
     m_Colors:

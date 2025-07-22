@@ -1,6 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class MuteBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
@@ -10,11 +8,11 @@ public class MuteBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
     public Sprite soundOnHover;
     public Sprite soundOff;
     public Sprite soundOn;
-    bool isMuted = false;
+    private bool _isMuted;
     public void OnPointerClick(PointerEventData eventData)
     {
-        isMuted = !isMuted;
-        if (isMuted)
+        _isMuted = !_isMuted;
+        if (_isMuted)
         {
             muteIcon.sprite = soundOff;
         }
@@ -26,7 +24,7 @@ public class MuteBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (isMuted)
+        if (_isMuted)
         {
             muteIcon.sprite = soundOffHover;
         }
@@ -38,7 +36,7 @@ public class MuteBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (isMuted)
+        if (_isMuted)
         {
             muteIcon.sprite = soundOff;
         }

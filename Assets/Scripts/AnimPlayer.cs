@@ -7,15 +7,15 @@ public class AnimPlayer : MonoBehaviour
     public bool playOnAwake = false; // Flag to determine if the animation should play on awake
     public bool loop = false; // Flag to determine if the animation should loop
 
-    private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
-    private bool isPlaying = false; // Track if the animation is currently playing
-    private int currentFrame = 0; // Current frame of the animation
-    private float timer = 0f; // Timer to track time between frames
+    private SpriteRenderer _spriteRenderer; // Reference to the SpriteRenderer component
+    private bool _isPlaying = false; // Track if the animation is currently playing
+    private int _currentFrame = 0; // Current frame of the animation
+    private float _timer = 0f; // Timer to track time between frames
 
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component attached to this GameObject
-        if (spriteRenderer == null) // Check if the SpriteRenderer component is not found
+        _spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component attached to this GameObject
+        if (_spriteRenderer == null) // Check if the SpriteRenderer component is not found
         {
             Debug.LogError("SpriteRenderer component not found on this GameObject.");
         }
@@ -31,20 +31,20 @@ public class AnimPlayer : MonoBehaviour
 
     void Update()
     {
-        if (isPlaying && customAnim && customAnim.sprites.Count > 0)
+        if (_isPlaying && customAnim && customAnim.sprites.Count > 0)
         {
-            timer += Time.deltaTime; // Increment the timer by the time elapsed since the last frame
+            _timer += Time.deltaTime; // Increment the timer by the time elapsed since the last frame
 
-            if (timer >= customAnim.animationSpeed) // Check if it's time to move to the next frame
+            if (_timer >= customAnim.animationSpeed) // Check if it's time to move to the next frame
             {
-                timer = 0f; // Reset the timer
-                currentFrame++; // Move to the next frame
+                _timer = 0f; // Reset the timer
+                _currentFrame++; // Move to the next frame
 
-                if (currentFrame >= customAnim.sprites.Count) // Check if the animation has reached the end
+                if (_currentFrame >= customAnim.sprites.Count) // Check if the animation has reached the end
                 {
                     if (loop) // If looping is enabled, reset to the first frame
                     {
-                        currentFrame = 0;
+                        _currentFrame = 0;
                     }
                     else // If not looping, stop the animation
                     {
@@ -54,7 +54,7 @@ public class AnimPlayer : MonoBehaviour
                 }
 
                 // Update the sprite to the current frame
-                spriteRenderer.sprite = customAnim.sprites[currentFrame];
+                _spriteRenderer.sprite = customAnim.sprites[_currentFrame];
             }
         }
     }
@@ -63,10 +63,10 @@ public class AnimPlayer : MonoBehaviour
     {
         if (customAnim != null && customAnim.sprites.Count > 0)
         {
-            isPlaying = true; // Set the animation to playing
-            currentFrame = 0; // Start from the first frame
-            timer = 0f; // Reset the timer
-            spriteRenderer.sprite = customAnim.sprites[currentFrame]; // Immediately show the first frame
+            _isPlaying = true; // Set the animation to playing
+            _currentFrame = 0; // Start from the first frame
+            _timer = 0f; // Reset the timer
+            _spriteRenderer.sprite = customAnim.sprites[_currentFrame]; // Immediately show the first frame
         }
         else
         {
@@ -76,13 +76,13 @@ public class AnimPlayer : MonoBehaviour
 
     public void StopAnimation()
     {
-        isPlaying = false; // Stop the animation
-        currentFrame = 0; // Reset the frame index
-        timer = 0f; // Reset the timer
+        _isPlaying = false; // Stop the animation
+        _currentFrame = 0; // Reset the frame index
+        _timer = 0f; // Reset the timer
 
-        if (spriteRenderer != null)
+        if (_spriteRenderer != null)
         {
-            spriteRenderer.sprite = defaultSprite; // Set the sprite to the default sprite
+            _spriteRenderer.sprite = defaultSprite; // Set the sprite to the default sprite
         }
     }
 }

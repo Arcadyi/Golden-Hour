@@ -1,11 +1,13 @@
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting; // Import the TextMeshPro namespace for text rendering
+using UnityEngine.Serialization;
+
+// Import the TextMeshPro namespace for text rendering
 
 public enum EffectState {
     Idle,
-    AAA,
-    WEE,
+    Aaa,
+    Wee,
     Jimbo,
     Arstotzka,
 }
@@ -15,20 +17,16 @@ public class KeyboardManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public string inputString = ""; // String to hold the input from the keyboard
     public float inputResetTime = 3.0f; // Time in seconds to reset the input string if no key is pressed
-    public float timeSinceLastKeyPress = 0.0f; // Time since the last key press
+    public float timeSinceLastKeyPress; // Time since the last key press
     public bool keyboardEnabled = true; // Flag to enable or disable keyboard input
 
     public TextMeshProUGUI inputText; // Reference to the TextMeshProUGUI component for displaying text
 
-    public Effect_AAAAA effect_AAAAA; // Reference to the Effect_AAAAA script for triggering effects
-    public Effect_Wee effect_Wee; // Reference to the Effect_Wee script for triggering effects
+    [FormerlySerializedAs("effect_AAAAA")] public Effect_AAAAA effectAaaaa; // Reference to the Effect_AAAAA script for triggering effects
+    [FormerlySerializedAs("effect_Wee")] public Effect_Wee effectWee; // Reference to the Effect_Wee script for triggering effects
 
     public JimboManager jimboManager; // Reference to the JimboManager script for managing game state
-    public Effect_Arstotzka effect_Arstotzka; // Reference to the Effect_Arstotzka script for triggering effects
-    void Start()
-    {
-        
-    }
+    [FormerlySerializedAs("effect_Arstotzka")] public Effect_Arstotzka effectArstotzka; // Reference to the Effect_Arstotzka script for triggering effects
 
     // Update is called once per frame
     void Update()
@@ -73,18 +71,18 @@ public class KeyboardManager : MonoBehaviour
             Application.Quit(); // Quit the application
         } else if (inputString.Contains("aaaaa")){
             Debug.Log("GOING CRAZY");
-            effect_AAAAA.Trigger(); // Call the method to play the effect
+            effectAaaaa.Trigger(); // Call the method to play the effect
             ResetInputString(); // Clear the input string
         } else if (inputString.Contains("weeee") || inputString.Contains("woooo")) {
             Debug.Log("GOING WEEEEE");
-            effect_Wee.Trigger(); // Call the method to play the effect
+            effectWee.Trigger(); // Call the method to play the effect
             ResetInputString(); // Clear the input string
         } else if (inputString.Contains("card") || inputString.Contains("ace")) {
             Debug.Log("CARD TRIGGERED");
             jimboManager.Trigger(); // Call the method to trigger the Jimbo effect
         } else if (inputString.Contains("arst")) {
             Debug.Log("PASSPORT TRIGGERED");
-            effect_Arstotzka.Trigger(); // Call the method to trigger the Arstotzka effect
+            effectArstotzka.Trigger(); // Call the method to trigger the Arstotzka effect
         }
     }
 
@@ -96,10 +94,10 @@ public class KeyboardManager : MonoBehaviour
                 effectState = EffectState.Idle; // Set the effect state to Idle
                 break;
             case "aaaaa":
-                effectState = EffectState.AAA; // Set the effect state to AAA
+                effectState = EffectState.Aaa; // Set the effect state to AAA
                 break;
             case "wee":
-                effectState = EffectState.WEE; // Set the effect state to WEE
+                effectState = EffectState.Wee; // Set the effect state to WEE
                 break;
             case "jimbo":
                 effectState = EffectState.Jimbo; // Set the effect state to Jimbo
